@@ -259,7 +259,7 @@
   outline: none;
 }
 
-  .main__btn a {
+/*  .main__btn a {
     position: relative;
     z-index: 2;
     color: #d0c0b2;
@@ -275,10 +275,11 @@
     color: #68553a;
     transition: all 0.35s;
     border-radius: 4px;
-  }
+  }*/
 
 .main__btn:hover {
-  color: #faf8f5;
+  color: #f2eeea;
+  background: #684d2c;
 }
 
 .main__btn:hover:after {
