@@ -411,7 +411,7 @@ button {
 /* Wrapper for responsive layout */
 .about-me-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: 3rem;
   margin: 0 auto;
   padding: 2rem;
