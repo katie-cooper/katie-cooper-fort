@@ -393,9 +393,9 @@ button {
 
 /* About Me Section */
 .about-me-section {
-  max-width: 600px;
+  padding: 3rem 2rem;
   margin: 0 auto;
-  font-family: "Source Code Pro", monospace; /* or your chosen font */
+  font-family: "Source Code Pro", monospace; 
 }
 
 .about-item {
@@ -408,6 +408,11 @@ button {
 
 .about-item:last-child {
   border-bottom: none;
+}
+
+.about-me-container{
+  padding: 3rem 2rem;
+  margin: 0 auto;
 }
 
 .label {
