@@ -410,8 +410,8 @@ button {
 .about-me-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  max-width: 1200px;
+  gap: 1rem;
+  /*max-width: 1200px;*/
   margin: 0 auto;
   padding: 2rem;
   align-items: start;
