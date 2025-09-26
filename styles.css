@@ -335,12 +335,24 @@ button {
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 90vh;
+    min-height: 90vh;
+    padding-bottom: 3rem;
   }
 
   .main__content {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .main__img--container {
+    margin-bottom: 2rem;
+  }
+
+  #main__img {
+    height: 250px;
+    width: 250px;
+    max-width: 80vw;
+    max-height: 80vw;
   }
 
   .main__content h1 {
@@ -359,6 +371,10 @@ button {
 }
 
 @media screen and (max-width: 480px) {
+  .main__container {
+    padding-bottom: 2rem;
+  }
+
   .main__content h1 {
     font-size: 2rem;
     margin-top: 3rem;
@@ -376,6 +392,15 @@ button {
   .main__btn {
     padding: 12px 36px;
     margin: 2.5rem 0;
+  }
+
+  .main__img--container {
+    margin-bottom: 1rem;
+  }
+
+  #main__img {
+    height: 200px;
+    width: 200px;
   }
 }
 
