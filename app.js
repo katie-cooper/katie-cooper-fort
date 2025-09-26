@@ -9,7 +9,7 @@
 // -------------------------------
 // Load Navbar
 // -------------------------------
-fetch('/navbar.html')  // Adjust path if navbar.html is in a different folder
+fetch('navbar.html')  // Adjust path if navbar.html is in a different folder
   .then(response => response.text())
   .then(data => {
     // Insert navbar into placeholder div
@@ -71,7 +71,7 @@ window.addEventListener('scroll', revealTimelineItems);
 revealTimelineItems();
 
 // FOOTER
-fetch('/footer.html')  // adjust path if footer.html is in a different folder
+fetch('footer.html')  // adjust path if footer.html is in a different folder
   .then(response => response.text())
   .then(data => {
     document.getElementById('footer').innerHTML = data;
