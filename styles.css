@@ -250,7 +250,8 @@
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
-  color: #c2b1bf;
+  color: #f2eeea;
+  background: #987d5b;
   margin-top: 2rem;
   cursor: pointer;
   position: relative;
@@ -270,8 +271,8 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #d4c4b0;
-    color: #faf8f5;
+    background: #e1ceb7;
+    color: #68553a;
     transition: all 0.35s;
     border-radius: 4px;
   }
