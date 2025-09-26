@@ -6,7 +6,7 @@
 }
 
 .navbar {
-  background: #dbb5c4;
+  background: #c2b1bf;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -87,7 +87,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #dbb5c4;
+    background: #c2b1bf;
     color: #2c2c2c;
   }.button:hover {
   background: #c29db0;
@@ -124,7 +124,7 @@
   }
 
   .navbar__menu.active {
-    background: #dbb5c4;
+    background: #c2b1bf;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -219,7 +219,7 @@
 
   .main__content h1 {
     font-size: 4rem;
-    background-color: #dbb5c4;
+    background-color: #c2b1bf;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -250,7 +250,7 @@
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
-  color: #dbb5c4;
+  color: #c2b1bf;
   margin-top: 2rem;
   cursor: pointer;
   position: relative;
@@ -261,7 +261,7 @@
   .main__btn a {
     position: relative;
     z-index: 2;
-    color: #faf8f5;
+    color: #d0c0b2;
     text-decoration: none;
   }  .main__btn:after {
     position: absolute;
@@ -380,9 +380,19 @@ button {
 }
 
 /* About Me Section */
+/* Wrapper for responsive layout */
+.about-me-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 .about-me-section {
   padding: 3rem 2rem;
-  margin: 0 auto;
+  margin: 0;
   font-family: "Source Code Pro", monospace; 
 }
 
@@ -400,7 +410,7 @@ button {
 
 .about-me-container{
   padding: 3rem 2rem;
-  margin: 0 auto;
+  margin: 0;
   font-family:'Times New Roman', Times, serif;
 }
 
@@ -420,7 +430,7 @@ button {
 .resume-button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #dbb5c4;
+    background-color: #c2b1bf;
     color: #2c2c2c;
     font-size: 1rem;
     font-weight: 600;
@@ -434,12 +444,49 @@ button {
     transform: translateY(-2px);
 }
 
+/* Responsive About Me Layout */
+@media screen and (max-width: 768px) {
+  .about-me-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .about-me-section {
+    padding: 2rem 1rem;
+  }
+  
+  .about-me-container {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-me-wrapper {
+    padding: 0.5rem;
+  }
+  
+  .about-me-section {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .about-me-container {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
 /* Education Section */
 .education-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+  margin: 0;
   background-color: #f5f0eb;
+}
+
+.education-section .section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .education-section h2 {
@@ -451,10 +498,16 @@ button {
 
 /* Experience Section */
 .experience-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+  margin: 0;
   background-color: #faf8f5;
+}
+
+.experience-section .section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .experience-section h2 {
@@ -466,10 +519,16 @@ button {
 
 /* Involvement Section */
 .involvement-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+  margin: 0;
   background-color: #e8e6e3;
+}
+
+.involvement-section .section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .involvement-section h2 {
@@ -524,7 +583,7 @@ button {
   top: 0;
   width: 16px;
   height: 16px;
-  background: #dbb5c4;
+  background: #c2b1bf;
   border-radius: 50%;
   border: 2px solid #faf8f5;
 }
@@ -556,7 +615,7 @@ button {
 .projects-section h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #dbb5c4;
+    color: #c2b1bf;
 }
 
 .projects-container {
@@ -662,7 +721,7 @@ button {
   display: inline-block;
   margin: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: #dbb5c4;
+  background-color: #c2b1bf;
   color: #2c2c2c;
   text-decoration: none;
   font-weight: 600;
@@ -731,7 +790,7 @@ button {
 
 /* Footer CSS */
 .footer__container {
-  background-color: #dbb5c4;
+  background-color: #c2b1bf;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
