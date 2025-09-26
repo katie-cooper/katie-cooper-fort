@@ -71,7 +71,7 @@ window.addEventListener('scroll', revealTimelineItems);
 revealTimelineItems();
 
 // FOOTER
-fetch('footer.html')  // adjust path if footer.html is in a different folder
+fetch('/katie-cooper-fort/footer.html')  // adjust path if footer.html is in a different folder
   .then(response => response.text())
   .then(data => {
     document.getElementById('footer').innerHTML = data;
