@@ -9,7 +9,7 @@
 // -------------------------------
 // Load Navbar
 // -------------------------------
-fetch('navbar.html')  // Adjust path if navbar.html is in a different folder
+fetch('/katie-cooper-fort/navbar.html')  // Adjust path if navbar.html is in a different folder
   .then(response => response.text())
   .then(data => {
     // Insert navbar into placeholder div
