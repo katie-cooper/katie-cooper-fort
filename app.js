@@ -9,7 +9,7 @@
 // -------------------------------
 // Load Navbar
 // -------------------------------
-fetch('/katie-cooper-fort/navbar.html')  // Adjust path if navbar.html is in a different folder
+fetch('/katie-cooper-fort/navbar.html')  
   .then(response => response.text())
   .then(data => {
     // Insert navbar into placeholder div
@@ -29,11 +29,6 @@ fetch('/katie-cooper-fort/navbar.html')  // Adjust path if navbar.html is in a d
     }
   })
   .catch(error => console.error('Error loading navbar:', error));
-
-
-// -------------------------------
-// Optional: Other JS for your site
-// -------------------------------
 
 // Example: Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -81,15 +76,15 @@ fetch('/katie-cooper-fort/footer.html')  // adjust path if footer.html is in a d
 
 // Gallery
 const images = [
-  '../images/team pic.jpg',
-  '../images/low_fidelity.png',
-  '../images/disabled_submit_figma.png',
-  '../images/active_submit_figma.png', 
-  '../images/max-users.jpeg', 
-  '../images/cant-add-self.jpeg', 
-  '../images/reservation-card-maker.png',
-  '../images/reservation-card-recipient.png',
-  '../images/admin-view.png'
+  '/katie-cooper-fort/images/team pic.jpg',
+  '/katie-cooper-fort/images/low_fidelity.png',
+  '/katie-cooper-fort/images/disabled_submit_figma.png',
+  '/katie-cooper-fort/images/active_submit_figma.png', 
+  '/katie-cooper-fort/images/max-users.jpeg', 
+  '/katie-cooper-fort/images/cant-add-self.jpeg', 
+  '/katie-cooper-fort/images/reservation-card-maker.png',
+  '/katie-cooper-fort/images/reservation-card-recipient.png',
+  '/katie-cooper-fort/images/admin-view.png'
 ];
 
 const captions = [
