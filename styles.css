@@ -196,7 +196,7 @@
 
 /* Main Content CSS */
 .main {
-  background-color: #faf8f5;
+  background-color: #e7e0e3;
 }
 
   .main__container {
@@ -247,6 +247,7 @@
 
 .main__btn {
   font-size: 1rem;
+  font-family: 'Source Code Pro', monospace;
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
