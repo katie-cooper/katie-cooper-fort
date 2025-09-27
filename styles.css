@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: Garamond, "Times New Roman" serif;
+  width: 80%;
 }
 
 .navbar {
@@ -250,8 +251,8 @@
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
-  color: #f2eeea;
-  background: #987d5b;
+  color: #505050;
+  background: #bdadbc;
   margin-top: 2rem;
   cursor: pointer;
   position: relative;
@@ -259,10 +260,10 @@
   outline: none;
 }
 
-/*  .main__btn a {
+  .main__btn a {
     position: relative;
     z-index: 2;
-    color: #d0c0b2;
+    color: #505050;
     text-decoration: none;
   }  .main__btn:after {
     position: absolute;
@@ -271,15 +272,15 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #e1ceb7;
-    color: #68553a;
+    /*background: #e1ceb7;*/
+    color: #505050;
     transition: all 0.35s;
     border-radius: 4px;
-  }*/
+  }
 
 .main__btn:hover {
-  color: #f2eeea;
-  background: #684d2c;
+  color: #505050;
+  background: #d8d3cc;
 }
 
 .main__btn:hover:after {
@@ -408,7 +409,6 @@ button {
 }
 
 /* About Me Section */
-/* Wrapper for responsive layout */
 .about-me-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -465,7 +465,7 @@ button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background-color: #c2b1bf;
-    color: #2c2c2c;
+    color: #505050;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 0.5rem;
@@ -520,7 +520,7 @@ button {
   padding: 2rem 0;
   width: 100%;
   margin: 0;
-  background-color: #f5f0eb;
+  background-color: #e6e1dd;
 }
 
 .education-section .section-content {
@@ -562,7 +562,7 @@ button {
   padding: 2rem 0;
   width: 100%;
   margin: 0;
-  background-color: #e8e6e3;
+  background-color: #e6e1dd;
 }
 
 .involvement-section .section-content {
