@@ -807,15 +807,10 @@ button {
 }
 
 /* Projects Pages */
-/* Project Page Styling */
 .project-header {
   text-align: center;
   margin: 3rem auto;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f5f0eb 0%, #faf8f5 100%);
-  border-radius: 1.25rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(194, 177, 191, 0.2);
   max-width: 1000px;
 }
 
@@ -841,9 +836,6 @@ button {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 2rem;
-  background: #faf8f5;
-  border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   margin-top: 2rem;
 }
 
@@ -954,7 +946,6 @@ button {
   font-weight: 600;
   font-size: 1rem;
   border-radius: 0.75rem;
-  box-shadow: 0 4px 15px rgba(194, 177, 191, 0.3);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -973,7 +964,6 @@ button {
 
 .project-links .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(194, 177, 191, 0.4);
 }
 
 .project-links .btn:hover:before {
@@ -991,13 +981,11 @@ button {
   max-width: 100%;
   border-radius: 0.75rem;
   margin: 1.5rem 0;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .project-screenshots img:hover {
   transform: scale(1.02);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive Project Page Design */
