@@ -19,8 +19,8 @@
   <main class="project-content">
     <section class="project-links">
       <a href="/katie-cooper-fort/Attatchments/Arcadia/final_report.pdf" target="_blank" class="btn">Project Report</a>
-      <a href="/katie-cooper-fort/Attatchments/Arcadia/poster.pdf" target="_blank" class="btn">Reserach Poster</a>"
-      <a href="/katie-cooper-fort/Attatchments/Arcadia/lit_review.pdf" target="_blank" class="btn">Literature Review</a>"
+      <a href="/katie-cooper-fort/Attatchments/Arcadia/poster.pdf" target="_blank" class="btn">Research Poster</a>
+      <a href="/katie-cooper-fort/Attatchments/Arcadia/lit_review.pdf" target="_blank" class="btn">Literature Review</a>
     </section>
 
     <section class="project-description">
@@ -33,31 +33,79 @@
         and <strong>Explainable AI (XAI)</strong> to identify the most critical indicators of patient outcomes.
       </p>
       <p>
-        By applying three different machine learning models and multiple feature selection tools, the research provided new
-        insights into the role of <strong>SOFA scores</strong> in sepsis prediction. Beyond technical accuracy, the project
-        explored the real-world challenges of applying AI in clinical settings and highlighted areas that require further
-        study.
+        After data imputation, we were able to use the dataset for more extensive modeling. The use of smaller KNN subsets was
+        crucial in reducing bias, as it allowed the application of medical knowledge to understand correlations between features.
+        For example, hemoglobin and fibrinogen levels are negatively correlated but appear in two different lab subsets (CBC and COAG),
+        allowing KNN imputation to accurately predict missing values.
       </p>
       <p>
-        A key emphasis of this work was bridging the gap between machine learning outputs and clinical understanding. The
-        research considered the design of effective <strong>AI user interfaces (UI)</strong> for clinicians, focusing on how
-        XAI methods can enhance usability, trust, and decision-making in healthcare environments.
+        Certain features such as Methemoglobin and Carboxyhemoglobin, which were only measured by specific hospitals, were dropped
+        to avoid introducing bias. Hyperparameter tuning was conducted using Optuna with a 60/20/20 train/test/validation split.
+        The Bayesian optimization approach enabled efficient tuning, reducing the number of models needed while increasing predictive
+        accuracy. Regularization and early stopping were applied in XGBoost and MLP models respectively to prevent overfitting.
+      </p>
+      <p>
+        XGBoost was tuned for number of estimators, tree depth, learning rate, subsample, column sample by tree, gamma, and
+        regularization parameters alpha and lambda. Random Forest was tuned for number of estimators, max depth, minimum samples
+        split, and minimum samples per leaf, optimizing log-loss on the validation set. Recursive Feature Elimination (RFE) and
+        feature importance plots were used to reduce the number of features for a user-friendly interface while maximizing predictive power.
+      </p>
+      <p>
+        To achieve local explainability, we used <strong>SHAP (Shapley Additive Explanations)</strong>. SHAP analyzes the model using
+        interventional feature perturbation, preserving feature relationships and providing detailed patient-level insights. Baseline
+        risk values were derived from vitals data to compare individual patient risks. Global explainability was further enhanced
+        using <strong>LIME</strong> and <strong>Permutation Feature Importance (PFI)</strong>, allowing a multi-method evaluation of feature contributions.
       </p>
     </section>
 
     <section class="project-details">
-      <h2>Key Contributions</h2>
+      <h2>Key Contributions & Skills Learned</h2>
       <ul>
-        <li>Predicted patient deterioration or improvement using the BOLD dataset</li>
-        <li>Applied three machine learning models with multiple feature selection tools</li>
-        <li>Investigated the role of SOFA scores in patient outcome prediction</li>
-        <li>Explored clinical challenges and future research needs in AI-based sepsis prediction</li>
-        <li>Highlighted the importance of Explainable AI and effective clinician-facing interfaces</li>
+        <li>Predicted patient deterioration or improvement using the BOLD dataset with three machine learning models</li>
+        <li>Handled missing data and class imbalance using KNN imputation and data preprocessing strategies</li>
+        <li>Performed hyperparameter tuning with Optuna, regularization, and early stopping to optimize model performance</li>
+        <li>Applied feature selection techniques (ANOVA, KS, Mann-Whitney U, Chi-squared, Fisher’s exact, RFE) to enhance interpretability</li>
+        <li>Implemented Explainable AI tools (SHAP, LIME, PFI) for both local and global model explainability</li>
+        <li>Developed a clinician-facing interface integrating model predictions and XAI outputs for usability and interpretability</li>
+        <li>Skills acquired: Python, XGBoost, Random Forest, MLP, KNN imputation, Optuna, data preprocessing, feature engineering, explainable AI, FairLearn, and clinical interface design</li>
+        <li>Presented research and software deliverables to academic leadership and stakeholders</li>
       </ul>
     </section>
+
+    <section class="project-materials">
+      <h2>Materials & Tools</h2>
+      <h3>Software & Tools</h3>
+      <ul>
+        <li>Visual Studio Code (code editor)</li>
+        <li>Python (programming language)</li>
+        <li>Fairlearn package</li>
+        <li>Django (web framework)</li>
+        <li>Bootstrap (CSS framework)</li>
+        <li>JavaScript (scripting language)</li>
+        <li>Plotly (data visualization library)</li>
+      </ul>
+
+      <h3>Data</h3>
+      <ul>
+        <li>BOLD, a blood-gas and oximetry linked dataset (includes eICU Collaborative Research Database, MIMIC-III, MIMIC-IV) [PhysioNet]</li>
+        <li>UI: Patient demographics (race/ethnicity, gender)</li>
+        <li>UI: Laboratory data (white blood cell count, pO₂ levels, blood pH, creatinine, platelet count)</li>
+        <li>UI: Imputed SOFA scores (respiration, central nervous system, liver)</li>
+        <li>UI: Computed SOFA scores (coagulation and renal)</li>
+      </ul>
+
+      <h3>Explainability Tools</h3>
+      <ul>
+        <li>Shapley Additive Explanations (SHAP, global and local methods)</li>
+        <li>Permutation Feature Importance (PFI, global methods)</li>
+        <li>Local Interpretable Model-Agnostic Explanations (LIME, global methods)</li>
+      </ul>
+    </section>
+
   </main>
 
   <div id="footer"></div>
   <script src="/katie-cooper-fort/app.js"></script>
 </body>
+
 </html>
