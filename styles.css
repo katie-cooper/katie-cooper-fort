@@ -205,7 +205,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #c3aec0; /* match your navbar background */
+  background-color: #c2b1bf; /* match your navbar background */
   min-width: 180px;
   z-index: 1000;
 }
@@ -229,53 +229,59 @@
 
 /* Main Content CSS */
 .main {
-  background-color: #e7e0e3;
+  background-color: #faf8f5;
 }
 
-  .main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    height: 90vh;
-    background-color: #faf8f5;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding-right: 50px;
-    padding-left: 50px;
-  }  .main__content {
-    color: #faf8f5;
-    width: 100%;
-  }
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: #faf8f5;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding-right: 50px;
+  padding-left: 50px;
+}  
 
-  .main__content h1 {
-    font-size: 4rem;
-    background-color: #c2b1bf;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }  .main__content h2 {
-    font-size: 2rem;
-    /*font-family: 'Courier New', Courier, monospace;*/
-    font-family: 'Source Code Pro', monospace;  font-weight: 300;
-    margin-top: 10px;
-    background-color: #6b6b6b;
-    /*background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);*/
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }.main__content p {
-  margin-top: 1rem;
+.main__content {
+  color: #faf8f5;
+  width: 100%;
+}
+
+.main__content h1 {
+  font-size: 4rem;
+  background-color: #c2b1bf;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}  
+
+.main__content h2 {
   font-size: 2rem;
-  font-weight: 700;
+  /*font-family: 'Courier New', Courier, monospace;*/
+  font-family: 'Source Code Pro', monospace;  font-weight: 300;
+  margin-top: 10px;
+  background-color: #6b6b6b;
+  /*background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);*/
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+margin-top: 1rem;
+font-size: 2rem;
+font-weight: 700;
 }
 
 .main__btn {
@@ -289,32 +295,34 @@
   margin-top: 2rem;
   cursor: pointer;
   position: relative;
+  transition: all 0.35s; 
   overflow: hidden;
   outline: none;
 }
 
-  .main__btn a {
-    position: relative;
-    z-index: 2;
-    color: #505050;
-    text-decoration: none;
-  }  .main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #e1ceb7;
-    /*color: #505050;*/
-    transition: all 0.35s ease;
-    border-radius: 4px;
-    z-index: 1;
-  }
+.main__btn a {
+  position: relative;
+  z-index: 2;
+  color: #505050;
+  text-decoration: none;
+}  
+
+.main__btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #e1ceb7;
+  transition: all 0.35s;
+  border-radius: 4px;
+  z-index: 1;
+}
 
 .main__btn:hover {
   color: #505050;
-  background: #d8d3cc;
+  /*background: #d8d3cc;*/
 }
 
 .main__btn:hover:after {
