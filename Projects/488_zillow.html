@@ -3,53 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tax Chatbot</title>
+  <title>Fixit Finder</title>
   <link rel="stylesheet" href="/katie-cooper-fort/styles.css">
 </head>
 <body>
     <div id="navbar"></div>
-    <section class="project-page">
-    
-      <div class="project-header">
+
+    <header class="project-header">
         <h1>Fixit Finder</h1>
-        <p>Spring 2025</p>
-        <p class="project-intro">
-        Fixit Finder is a group project developed for COMP 488 at UNC–Chapel Hill. 
-        The tool assists contractors in the Chapel Hill area by identifying homes 
-        likely to require renovation, helping them better target their advertising 
-        and outreach. 
-        </p>
-    </div>
+        <p class="project-tagline">Machine Learning model tool for contractors in the Chapel Hill area.</p>
+    </header>
 
     <div class="project-content">
-        <h2>My Role: Project Leader</h2>
-        <p>
-        As project leader, I managed our team of six, guided decision-making, and ensured 
-        that we delivered a functional prototype on time. My responsibilities included:
-        </p>
-        <ul>
-        <li><strong>Stakeholder Analysis:</strong> Identified contractors as the primary stakeholders and aligned project goals with their needs.</li>
-        <li><strong>Scope Definition:</strong> Outlined the features and boundaries of the project to ensure clarity and feasibility.</li>
-        <li><strong>Task Delegation:</strong> Assigned responsibilities across data cleaning, model building, and prototype design to balance workload effectively.</li>
-        <li><strong>Timeline Management:</strong> Created and maintained project milestones to keep the group on track.</li>
-        <li><strong>Risk Assessment:</strong> Anticipated challenges with data quality and tool usability, developing strategies to address them.</li>
-        <li><strong>Deliverables Oversight:</strong> Coordinated the production of the final presentation and interactive demo.</li>
-        </ul>
+        <section class="project-description">
+            <p>Spring 2025</p>
+            <p>Role: Project Lead</p>
+        </section>
 
-        <h2>Key Features</h2>
-        <ul>
-        <li>Filtered housing data to identify older homes likely in need of renovation.</li>
-        <li>Developed a recommender system based on home attributes such as year built, bed-to-bath ratio, and remodel indicators.</li>
-        <li>Built a prototype interface to showcase contractor use cases.</li>
-        </ul>
+        <section class="project-details">
+            <h2>Overview & Functionality</h2>
+            <p>
+                We used data web-scraped from Zillow containing information about homes in Chapel Hill. 
+                The dataset included details provided on the Zillow site, such as home age, location, 
+                estimated value, and other property characteristics. Our group cleaned and prepared this data, 
+                leveraging AI tools to assist in the process, and built a predictive model to identify homes 
+                with renovation potential.
+            </p>
+            <p>
+                The model was designed to be useful for contractors in the Chapel Hill area who are looking 
+                to identify properties with renovation value. Our presentation included a demonstration of the model, 
+                a Figma mockup of the product, and a pitch to stakeholders and potential users of Fixit Finder.
+            </p>
+        </section>
 
-        <h2>Project Links</h2>
-        <a href="https://www.figma.com/proto/83Tv6awIIZTlevp5ijGaqu/C488-Capstone-Prototype?node-id=94-19526&t=2eXifUgqEJ4c3Jni-1" target="_blank" class="btn">View Figma Prototype</a>
-        <a href="https://drive.google.com/file/d/1vfacKtKtG8FkUoKmF7xnje9_aC-TmlZt/view?usp=sharing" target="_blank" class="btn">View Project Presentation</a>
+        <section class="project-links">
+            <h2>Explore</h2>
+            <a href="https://www.figma.com/proto/83Tv6awIIZTlevp5ijGaqu/C488-Capstone-Prototype?node-id=94-19526&t=2eXifUgqEJ4c3Jni-1" target="_blank" class="btn">View Figma Prototype</a>
+            <a href="https://drive.google.com/file/d/1vfacKtKtG8FkUoKmF7xnje9_aC-TmlZt/view?usp=sharing" target="_blank" class="btn">View Project Presentation</a>
+        </section>
+
+        <section class="project-details">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Filtered housing data to identify older homes likely in need of renovation.</li>
+                <li>Developed a recommender system based on home attributes such as year built, bed-to-bath ratio, and remodel indicators.</li>
+                <li>Built a prototype interface to showcase contractor use cases.</li>
+            </ul>
+        </section>
     </div>
-    </section>
 
-  <div id="footer"></div>
-  <script src="/katie-cooper-fort/app.js"></script>
+    <div id="footer"></div>
+    <script src="/katie-cooper-fort/app.js"></script>
 </body>
 </html>
