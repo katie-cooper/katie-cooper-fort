@@ -234,7 +234,7 @@ transition: all 0.3s ease;
 
 /* Main Content CSS */
 .main {
-  background-color: #e8e4e6;
+  background-color: #f0edf0;
 }
 
 .main__container {
@@ -244,7 +244,7 @@ transition: all 0.3s ease;
   justify-self: center;
   margin: 0 auto;
   height: 90vh;
-  background-color: #faf8f5;
+  background-color: #f0edf0;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -580,6 +580,7 @@ button {
 .education-section h2 {
   font-family: "EB Garamond", "Times New Roman", serif;
   font-size: 2rem;
+  color: rgb(77, 57, 34);
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -600,6 +601,7 @@ button {
 
 .experience-section h2 {
   font-family: "EB Garamond", "Times New Roman", serif;
+  color: rgb(77, 57, 34);
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -621,6 +623,7 @@ button {
 
 .involvement-section h2 {
   font-family: "EB Garamond", "Times New Roman", serif;
+  color: rgb(77, 57, 34);
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -757,17 +760,18 @@ button {
 .projects-section {
     padding: 5rem 2rem;
     text-align: center;
-    background-color: #e6dfe5;
+    background-color: #eee7eb;
 }
 
 .projects-section h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #8b765f;
+    color: rgb(77, 57, 34);
 }
 
 .projects-container {
     display: grid;
+    padding: 2rem 0;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     max-width: 1000px;
@@ -776,17 +780,21 @@ button {
 
 .project-list {
   display: flex;
+  padding: 0 20rem;
   flex-direction: column;
   gap: 20px; /* space between projects */
 }
 
 .project-card {
+  text-align: left;
   display: block; /* make the anchor act like a block */
-  padding: 20px 0;
-  border-bottom: 1px solid #ccc;
+  padding: 20px 10px;
+  font-family: 'Source Code Pro', monospace;  font-weight: 300;
+  margin: 5px 0;
+  border-bottom: 4px solid #daced8;
   text-decoration: none; /* remove default link underline */
   color: inherit; /* inherit text color */
-  transition: background 0.2s;
+  transition: all 0.2s, background 0.2s;
 }
 
 /* Remove border on last item */
@@ -795,19 +803,20 @@ button {
 }
 
 .project-card:hover {
-  background: #f0f0f0;
+  background: #faeef7;
+  transform: translateY(-5px);
 }
 
 .project-card h3 {
   margin: 0 0 10px 0;
   font-size: 1.3rem;
-  color: #444;
+  color: #454242;
 }
 
 .project-card p {
   margin: 0;
   font-size: 1rem;
-  color: #666;
+  color: #6d6b6b;
   line-height: 1.5;
 }
 
