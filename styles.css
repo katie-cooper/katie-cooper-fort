@@ -204,7 +204,7 @@ transition: all 0.3s ease;
 /* Dropdown content hidden by default */
 .dropdown-content {
   display: none;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   font-size: 1.2rem;
   text-align: left; 
   position: absolute;
@@ -216,7 +216,7 @@ transition: all 0.3s ease;
 .dropdown-content a {
   color: #fff;
   text-align: left; 
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -234,7 +234,7 @@ transition: all 0.3s ease;
 
 /* Main Content CSS */
 .main {
-  background-color: #faf8f5;
+  background-color: #e8e4e6;
 }
 
 .main__container {
@@ -253,7 +253,7 @@ transition: all 0.3s ease;
 }  
 
 .main__content {
-  color: #faf8f5;
+  color: #e8e4e6;
   width: 100%;
 }
 
@@ -358,7 +358,7 @@ font-weight: 700;
 
 #caption {
   font-size: 18px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', monospace;
   margin: 10px 0;
   color: #2c2c2c;
 }
@@ -568,7 +568,7 @@ button {
   padding: 2rem 0;
   width: 100%;
   margin: 0;
-  background-color: #e6e1dd;
+  background-color: #ebe6e2;
 }
 
 .education-section .section-content {
@@ -610,7 +610,7 @@ button {
   padding: 2rem 0;
   width: 100%;
   margin: 0;
-  background-color: #e6e1dd;
+  background-color: #ebe6e2;
 }
 
 .involvement-section .section-content {
@@ -757,13 +757,13 @@ button {
 .projects-section {
     padding: 5rem 2rem;
     text-align: center;
-    background-color: #f5f0eb;
+    background-color: #e6dfe5;
 }
 
 .projects-section h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    color: #c2b1bf;
+    color: #8b765f;
 }
 
 .projects-container {
@@ -774,14 +774,52 @@ button {
     margin: 0 auto;
 }
 
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between projects */
+}
+
 .project-card {
+  display: block; /* make the anchor act like a block */
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none; /* remove default link underline */
+  color: inherit; /* inherit text color */
+  transition: background 0.2s;
+}
+
+/* Remove border on last item */
+.project-list .project-card:last-child {
+  border-bottom: none;
+}
+
+.project-card:hover {
+  background: #f0f0f0;
+}
+
+.project-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/*.project-card {
     background: #faf8f5;
+    font-family: 'Source Code Pro', monospace;
     padding: 2rem;
     border-radius: 1rem;
     text-decoration: none;
     color: inherit;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project-card:hover {
@@ -804,7 +842,7 @@ button {
     font-size: 1rem;
     line-height: 1.5;
     color: #6b6b6b;
-}
+}*/
 
 /* Projects Pages */
 .project-header {
