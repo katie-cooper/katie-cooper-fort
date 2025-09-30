@@ -1268,14 +1268,13 @@ button {
 }
 
 /* CERAMICS */
-/* Scoped ceramics page styling */
 .ceramics-page {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #fdf6f0; /* warm, clay-like background */
+    background-color: #e3ddd7; 
     font-family: 'Georgia', serif;
 }
 
@@ -1283,9 +1282,9 @@ button {
     width: 80%;
     height: 90%;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    border-radius: 12px; /* subtle handcrafted feel */
+    border-radius: 9px; 
     overflow: hidden;
-    background-color: #fff8f0;
+    background-color: #eae3db;
 }
 
 .ceramics-page .ceramics-slideshow {
