@@ -298,6 +298,7 @@ font-weight: 700;
   color: #505050;
   background: #bdadbc;
   margin-top: 2rem;
+  margin-right: 2rem; 
   cursor: pointer;
   position: relative;
   transition: all 0.35s; 
