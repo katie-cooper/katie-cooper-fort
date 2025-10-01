@@ -1284,11 +1284,9 @@ button {
 
 /* CERAMICS */
 .ceramics-page {
-  max-width: 1200px;
   margin: 1rem auto;
   padding: 1rem 2rem; 
-  background-color: #e3ddd7; 
-  font-family: 'Georgia', serif;
+  font-family: 'source Code Pro', monospace;
 }
 
 .ceramics-gallery {
@@ -1318,35 +1316,57 @@ button {
     margin: 0.2rem 0;
 }
 
-.ceramics-page .gallery-title {
+/* CERMAICS GALLERY */
+
+/* Gallery title styling */
+.gallery-title {
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 1.5rem;
+    color: #333;
 }
 
-.ceramics-page .portfolio-grid {
+/* Grid container */
+.portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-/* Gallery items */
-.ceramics-page .portfolio-item {
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+/* Each item in the grid */
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
 }
 
-.ceramics-page .portfolio-item img {
+.portfolio-item:hover {
+    transform: scale(1.02);
+}
+
+/* Image styling */
+.portfolio-item img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 6px;
     object-fit: cover;
-    display: block;
 }
 
-/* Hover effect */
-.ceramics-page .portfolio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+/* Caption styling */
+.portfolio-item figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
 }
+
+
+
+
