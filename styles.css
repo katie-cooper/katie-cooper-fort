@@ -1289,17 +1289,12 @@ button {
   font-family: 'source Code Pro', monospace;
 }
 
-.ceramics-gallery {
-    width: 80%;
-    height: 90%;
-    border-radius: 9px; 
-    background-color: #eae3db;
-}
-
-.ceramics-page .ceramics-slideshow {
+/* PDF iframe styling */
+.ceramics-slideshow {
     width: 100%;
-    height: 100%;
+    height: 500px; /* adjust as needed */
     border: none;
+    border-radius: 6px;
 }
 
 .course-description {
@@ -1316,14 +1311,12 @@ button {
     margin: 0.2rem 0;
 }
 
-/* CERMAICS GALLERY */
-
 /* Gallery title styling */
 .gallery-title {
     text-align: center;
     font-family: 'Arial', sans-serif;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: #473115;
 }
 
 /* Grid container */
@@ -1341,14 +1334,15 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #bdb09e;
     padding: 0.5rem;
     border-radius: 8px;
-    transition: transform 0.2s;
+    transition: transform 1s ease;
 }
 
 .portfolio-item:hover {
-    transform: scale(1.02);
+    transform: scale(2); 
+    z-index: 10;
 }
 
 /* Image styling */
