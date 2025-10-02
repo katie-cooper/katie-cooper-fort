@@ -1376,6 +1376,15 @@ button {
   height: 90vh
 } */
 
+.pdf_wrapper {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if needed */
+  margin: 2rem 0;
+  width: 90%;
+  height: 90vh;            /* tall area */
+}
+
 .pdf_port {
   display: flex;
   justify-content: center;   /* centers horizontally */
