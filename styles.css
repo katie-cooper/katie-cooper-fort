@@ -1369,11 +1369,26 @@ button {
     text-align: center;
 }
 
-.pdf_port {
+/* .pdf_port {
   text-align: center;
   margin: 2rem 0;
   width: auto;
   height: 90vh
+} */
+
+.pdf_port {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* centers vertically if needed */
+  margin: 2rem 0;
+  height: 90vh;              /* tall area */
+}
+
+.pdf_port iframe,
+.pdf_port embed {
+  width: 80vw;   /* fill most of the screen width */
+  height: 100%;  /* match container height */
+  border: none;  /* remove iframe border */
 }
 
 
