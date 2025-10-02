@@ -1159,6 +1159,12 @@ button {
   align-items: center;
 }
 
+.footer__container a {
+  color: rgb(84, 62, 37);
+  font-family: 'Source Code Pro', monospace;
+  font-size: smaller;
+}
+
 #footer__logo {
   color: rgb(84, 62, 37);
   display: flex;
