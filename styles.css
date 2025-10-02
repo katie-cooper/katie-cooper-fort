@@ -1290,9 +1290,12 @@ button {
 
 /* CERAMICS */
 .ceramics-page {
-  margin: 1rem auto;
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 1rem 2rem; 
-  font-family: 'source Code Pro', monospace;
+  font-family: 'Source Code Pro', monospace;
 }
 
 /* PDF iframe styling */
@@ -1308,7 +1311,7 @@ button {
     padding: 1rem 1rem; 
     font-family: 'source Code Pro', monospace;
     margin-bottom: 2rem;
-    color: rgb(89, 76, 45)
+    color: rgb(113, 97, 60)
 }
 
 .course-description h1 {
@@ -1325,7 +1328,7 @@ button {
     text-align: left;
     font-size: 2rem;
     font-family: "garamond", "Times New Roman", serif;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     border-bottom: 4px solid #daced8;
     color: #66543c;
     padding: 1rem 1rem; 
