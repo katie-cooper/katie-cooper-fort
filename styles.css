@@ -1314,8 +1314,10 @@ button {
 /* Gallery title styling */
 .gallery-title {
     text-align: center;
-    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    font-family: "garamond", "Times New Roman", serif;
     margin-bottom: 1.5rem;
+    border-bottom: 1px solid #7c6f5e;
     color: #473115;
 }
 
@@ -1334,7 +1336,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #bdb09e;
+    background-color: #e0d2bf;
     padding: 0.5rem;
     border-radius: 8px;
     transition: transform 1s ease;
@@ -1359,6 +1361,13 @@ button {
     font-size: 0.9rem;
     color: #555;
     text-align: center;
+}
+
+.pdf_port {
+  text-align: center;
+  margin: 2rem 0;
+  width: auto;
+  height: 90vh
 }
 
 
