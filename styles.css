@@ -1304,8 +1304,11 @@ button {
 }
 
 .course-description {
-    text-align: center;
+    text-align: left;
+    padding: 1rem 1rem; 
+    font-family: 'source Code Pro', monospace;
     margin-bottom: 2rem;
+    color: rgb(89, 76, 45)
 }
 
 .course-description h1 {
@@ -1319,12 +1322,13 @@ button {
 
 /* Gallery title styling */
 .gallery-title {
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     font-family: "garamond", "Times New Roman", serif;
     margin-bottom: 1.5rem;
     border-bottom: 4px solid #daced8;
-    color: #473115;
+    color: #66543c;
+    padding: 1rem 1rem; 
 }
 
 /* Grid container */
@@ -1364,9 +1368,12 @@ button {
 /* Caption styling */
 .portfolio-item figcaption {
     margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: #555;
+    font-size: 1rem;
     text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1.5rem;
+    color: #8c847a;
+    padding: 1rem 1rem; 
 }
 
 /* .pdf_port {
