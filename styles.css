@@ -1296,6 +1296,7 @@ button {
   align-items: flex-start;
   padding: 1rem 2rem; 
   font-family: 'Source Code Pro', monospace;
+  color: rgb(117, 95, 61)
 }
 
 /* PDF iframe styling */
@@ -1311,7 +1312,6 @@ button {
     padding: 1rem 1rem; 
     font-family: 'source Code Pro', monospace;
     margin-bottom: 2rem;
-    color: rgb(113, 97, 60)
 }
 
 .course-description h1 {
@@ -1321,6 +1321,7 @@ button {
 
 .course-description p {
     margin: 0.2rem 0;
+    color: rgb(157, 135, 97); 
 }
 
 /* Gallery title styling */
@@ -1330,7 +1331,6 @@ button {
     font-family: "garamond", "Times New Roman", serif;
     margin-bottom: 2rem;
     border-bottom: 4px solid #daced8;
-    color: #66543c;
     padding: 1rem 1rem; 
 }
 
