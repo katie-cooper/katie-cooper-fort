@@ -802,7 +802,23 @@ button {
   text-decoration: none; /* remove default link underline */
   color: inherit; /* inherit text color */
   transition: all 0.2s, background 0.2s;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+  position: relative;
 }
+
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* When scrolled into view */
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 500px) {
     .projects-section {
         padding: 3rem 1rem;
