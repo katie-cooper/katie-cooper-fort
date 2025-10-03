@@ -1,5 +1,5 @@
 // Load About Me section
-fetch("/katie-cooper-fort/main_page_sections/about-me.html")
+fetch("/katie-cooper-fort/main_page_sections/about_me.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("about-me").innerHTML = data;
@@ -39,8 +39,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
-
 
 // Scroll reveal for timeline items
 const timelineItems = document.querySelectorAll('.timeline-item');
