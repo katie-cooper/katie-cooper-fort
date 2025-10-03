@@ -132,7 +132,7 @@ prevBtn.addEventListener('click', () => {
   caption.textContent = captions[currentIndex];
 });
 
-/*// TYPING  
+// TYPING  
 const text = "Student, Developer, and Creator";
 let index = 0;
 const speed = 50; // ms
@@ -146,4 +146,4 @@ function typeWriter() {
   }
 }
 
-window.onload = typeWriter;*/
+window.onload = typeWriter;
