@@ -10,7 +10,30 @@ fetch("/katie-cooper-fort/main_page_sections/education.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("education").innerHTML = data;
+
+    // Now the timeline items exist in the DOM, so select them
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    function revealTimelineItems() {
+      const windowHeight = window.innerHeight;
+
+      timelineItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        const revealPoint = 150; // trigger point from bottom of viewport
+
+        if (itemTop < windowHeight - revealPoint) {
+          item.classList.add('visible');
+        }
+      });
+    }
+
+    // Add scroll listener
+    window.addEventListener('scroll', revealTimelineItems);
+
+    // Trigger on load
+    revealTimelineItems();
   });
+
 
 // Load Experience section
 fetch("/katie-cooper-fort/main_page_sections/experience.html")
