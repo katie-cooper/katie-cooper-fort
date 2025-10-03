@@ -125,7 +125,7 @@ prevBtn.addEventListener('click', () => {
   caption.textContent = captions[currentIndex];
 });
 
-// TYPING  
+/* TYPING  
 const text = "Student, Developer, and Creator";
 let index = 0;
 const speed = 50; // ms
@@ -139,4 +139,17 @@ function typeWriter() {
   }
 }
 
-window.onload = typeWriter;
+window.onload = typeWriter;*/
+
+var typing = document.getElementById('typing');
+
+var typewriter = new Typewriter(typing, {
+  loop: false,
+  delay: 50,
+});
+
+typewriter
+  .pauseFor(1000)
+  .typeString('Student, Developer, and Creator')
+  .pauseFor(3000)
+  .start()
