@@ -5,6 +5,34 @@ fetch("/katie-cooper-fort/main_page_sections/about_me.html")
     document.getElementById("about-me").innerHTML = data;
   });
 
+// Load Education section
+fetch("/katie-cooper-fort/main_page_sections/education.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("education").innerHTML = data;
+  });
+
+// Load Experience section
+fetch("/katie-cooper-fort/main_page_sections/experience.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("experience").innerHTML = data;
+  });
+
+// Load Community Involvement section
+fetch("/katie-cooper-fort/main_page_sections/involvement.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("involvement").innerHTML = data;
+  });
+
+// Load Projects section
+fetch("/katie-cooper-fort/main_page_sections/projects.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("projects").innerHTML = data;
+  });
+
 // -------------------------------
 // Load Navbar
 // -------------------------------
