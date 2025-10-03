@@ -823,6 +823,11 @@ button {
 /* Remove border on last item */
 .project-list .project-card:last-child {
   border-bottom: none;
+  padding: 0 1rem; 
+}
+
+.project-list .project-card:first-child{
+  border-bottom: 4px solid #daced8;
 }
 
 .project-card:hover {
