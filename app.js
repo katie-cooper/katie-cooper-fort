@@ -7,7 +7,7 @@
 // });
 
 // Load About Me section
-fetch("about-me.html")
+fetch("/katie-cooper-fort/main_page_sections/about-me.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("about-me").innerHTML = data;
