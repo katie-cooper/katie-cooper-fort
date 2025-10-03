@@ -26,11 +26,7 @@ fetch("/katie-cooper-fort/main_page_sections/education.html")
         }
       });
     }
-
-    // Add scroll listener
     window.addEventListener('scroll', revealTimelineItems);
-
-    // Trigger on load
     revealTimelineItems();
   });
 
@@ -40,6 +36,24 @@ fetch("/katie-cooper-fort/main_page_sections/experience.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("experience").innerHTML = data;
+
+    // Now the timeline items exist in the DOM, so select them
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    function revealTimelineItems() {
+      const windowHeight = window.innerHeight;
+
+      timelineItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        const revealPoint = 150; // trigger point from bottom of viewport
+
+        if (itemTop < windowHeight - revealPoint) {
+          item.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealTimelineItems);
+    revealTimelineItems();
   });
 
 // Load Community Involvement section
@@ -47,6 +61,24 @@ fetch("/katie-cooper-fort/main_page_sections/involvement.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("involvement").innerHTML = data;
+
+    // Now the timeline items exist in the DOM, so select them
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    function revealTimelineItems() {
+      const windowHeight = window.innerHeight;
+
+      timelineItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        const revealPoint = 150; // trigger point from bottom of viewport
+
+        if (itemTop < windowHeight - revealPoint) {
+          item.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealTimelineItems);
+    revealTimelineItems();
   });
 
 // Load Projects section
