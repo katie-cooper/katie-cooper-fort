@@ -750,11 +750,15 @@ button {
 .timeline-content h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "EB Garamond", "Times New Roman", serif;
+  font-family: "source Code Pro", monospace;  font-weight: 600;
 }
 
 .timeline-content p {
   margin: 0.3rem 0;
+}
+
+.timeline-content p strong {
+  font-family: 'source Code Pro', monospace;  font-weight: 600;
 }
 
 /* Projects Section */

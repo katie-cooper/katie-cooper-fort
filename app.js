@@ -1,11 +1,3 @@
-// const menu = document.querySelector('#mobile-menu');
-// const menuLinks = document.querySelector('.navbar__menu');
-
-// menu.addEventListener('click', function() {
-//   menu.classList.toggle('is-active');
-//   menuLinks.classList.toggle('active');
-// });
-
 // Load About Me section
 fetch("/katie-cooper-fort/main_page_sections/about-me.html")
   .then(response => response.text())
@@ -48,8 +40,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// You can add more site-wide JS here if needed
-// timeline
+
+
 // Scroll reveal for timeline items
 const timelineItems = document.querySelectorAll('.timeline-item');
 
@@ -66,11 +58,28 @@ function revealTimelineItems() {
   });
 }
 
-// Listen to scroll events
 window.addEventListener('scroll', revealTimelineItems);
 
-// Run once in case some items are already in view
 revealTimelineItems();
+
+// Scroll reveal for project cards
+const projectCards = document.querySelectorAll('.project-card');
+
+function revealProjectCards() {
+  const windowHeight = window.innerHeight;
+
+  projectCards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    const revealPoint = 150; 
+
+    if (cardTop < windowHeight - revealPoint) {
+      card.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealProjectCards);
+revealProjectCards();
 
 // FOOTER
 fetch('/katie-cooper-fort/footer.html')  // adjust path if footer.html is in a different folder
@@ -125,7 +134,7 @@ prevBtn.addEventListener('click', () => {
   caption.textContent = captions[currentIndex];
 });
 
-// TYPING  
+/*// TYPING  
 const text = "Student, Developer, and Creator";
 let index = 0;
 const speed = 50; // ms
@@ -139,4 +148,4 @@ function typeWriter() {
   }
 }
 
-window.onload = typeWriter;
+window.onload = typeWriter;*/
