@@ -6,6 +6,13 @@
 //   menuLinks.classList.toggle('active');
 // });
 
+// Load About Me section
+fetch("about-me.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("about-me").innerHTML = data;
+  });
+
 // -------------------------------
 // Load Navbar
 // -------------------------------
