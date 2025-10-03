@@ -117,3 +117,19 @@ prevBtn.addEventListener('click', () => {
   currentImage.src = images[currentIndex];
   caption.textContent = captions[currentIndex];
 });
+
+// TYPING  
+const text = "Student, Developer, and Creator";
+let index = 0;
+const speed = 50; // ms
+const typingElement = document.getElementById("typing");
+
+function typeWriter() {
+  if (index < text.length) {
+    typingElement.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.onload = typeWriter;

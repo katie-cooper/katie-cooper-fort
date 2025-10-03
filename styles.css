@@ -1410,6 +1410,12 @@ button {
   border: none;  /* remove iframe border */
 }
 
+/* TYPING */
+#typing {
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
 
 
 
