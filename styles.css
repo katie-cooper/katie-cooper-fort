@@ -826,8 +826,9 @@ button {
   padding: 0 1rem; 
 }
 
-.project-list .project-card:first-child{
+.project-list .project-card:only-child{
   border-bottom: 4px solid #daced8;
+  padding: 1rem 1rem; 
 }
 
 .project-card:hover {
