@@ -886,7 +886,7 @@ button {
 .project-header {
   text-align: center;
   margin: 1rem auto;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   max-width: 1000px;
 }
 
@@ -911,7 +911,7 @@ button {
 .project-content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   margin-top: 1rem;
 }
 
@@ -955,7 +955,7 @@ button {
 
 .project-details ul,
 .project-tech ul {
-  padding-left: 0;
+  padding-left: 1.5rem;
   list-style: none;
   margin: 1.5rem 0;
 }
@@ -965,15 +965,12 @@ button {
   position: relative;
   padding-left: 2rem;
   margin-bottom: 0.75rem;
-  /*background: rgba(245, 240, 235, 0.5);*/
   padding: 1rem 1rem 1rem 2.5rem;
-  /*border-radius: 0.5rem;
-  border-left: 4px solid #c2b1bf; */
 }
 
 .project-details ul li:before,
 .project-tech ul li:before {
-  content: '▸';
+  content: '•';
   position: absolute;
   left: 1rem;
   color: #c2b1bf;
@@ -990,7 +987,7 @@ button {
 .project-tech ol li {
   counter-increment: project-counter;
   position: relative;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   margin-bottom: 0.75rem;
 }
 
