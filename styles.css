@@ -829,7 +829,7 @@ button {
 .project-list .project-card:only-child{
   border-bottom: 4px solid #daced8;
   padding: 1rem 1rem; 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .project-card:hover {
