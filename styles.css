@@ -45,6 +45,11 @@
   font-size: 2rem;
 }
 
+.logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .navbar__menu {
   display: flex;
   align-items: center;
