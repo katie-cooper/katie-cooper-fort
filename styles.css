@@ -48,6 +48,7 @@
 .logo-icon {
   width: 24px;
   height: 24px;
+  padding-right: 1rem; 
 }
 
 .navbar__menu {
